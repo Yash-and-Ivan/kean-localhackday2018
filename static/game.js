@@ -28,11 +28,13 @@ checkAnswer = function(val){
         $("#flash").css({
             "background": "green"
         });
+        playSound(true);
         num_correct += 1;
     } else {
         $("#flash").css({
             "background": "red"
         })
+        playSound(false);
     }
     $("#flash").fadeIn(50).fadeOut(250);
 
@@ -118,4 +120,10 @@ setCountDown = function(){
       }
       time_taken += 0.5;
   }, 500);
+};
+
+playSound = function(good){
+    var rand = Math.floor((Math.random() * 9)) + 1;
+    var audio = new Audio('/static/sounds/' + (good ? "Good" : "Bad") + "/" + rand + ".mp3");
+    audio.play()
 };
