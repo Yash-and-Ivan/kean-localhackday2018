@@ -1,0 +1,86 @@
+.tweet ul {
+    list-style-type: none;
+}
+.tweet img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 6px;
+    margin: 0px;
+    padding: 0px
+}
+.tweet h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.tweet h2 {
+    font-size: 12px;
+    color: #8899a6;
+    margin-top: -0.6em;
+}
+
+.name {
+    margin-left: .5em;
+    padding-top: .4em;
+}
+.name b {
+    color: #8899a6;
+    font-weight: normal;
+}
+.name s {
+    text-decoration: none;
+    color:#b1bbc3;
+}
+.tweet .body {
+    font-size: 20px;
+    padding: .1em 0em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    margin-bottom: 10px;
+}
+.stats {
+    overflow: hidden;
+    padding: .4em 0em;
+    border-bottom: 1px solid #e1e8ed;
+    border-top: 1px solid #e1e8ed;
+}
+.stats p {
+    text-align: inherit;
+    display: block;
+    float: left;
+    overflow: hidden;
+    min-width: 72px;
+    color: #8899a6;
+}
+.stats a {
+    font-size: 9px;
+    line-height: 10px;
+    float: left;
+}
+.stats strong span {
+    color: #657786;
+    font-weight: normal;
+}
+#tweet-rts, #tweet-likes {
+    color: #000000;
+    font-weight: bold;
+}
+.stats strong {
+    color: #000000;
+    line-height: 20px;
+    display: block;
+    font-size: 16px;
+    padding: 0px;
+}
+.date {
+    font-size: 12px;
+    color: #8899a6;
+}
+.tweet {
+    margin: auto;
+    border: .1em solid #E1E8ED;
+    border-radius: .4em;
+    padding: 1em;
+    overflow: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}

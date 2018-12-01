@@ -1,0 +1,47 @@
+#flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.25;
+}
+
+#white-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+#white-overlay div {
+    font-size: 100px;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#fake-tweet {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+}
+#button-container {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+}
+#fake-tweet{
+    background: white;
+}
