@@ -13,15 +13,15 @@
 <body>
 
     <div id="main-container">
-
-        <h1>Trumper</h1>
+        <img src="{{url_for('static', filename='logo.png')}}"/>
+        <br>
         <br>
         <p>
             Donald Trump has been making Twitter great again lately. But sometimes, it’s hard to know what’s real and what’s not on twitter.
 
             Trumper creates Trump tweets for you to analyze - are they real or are they fake?
 
-            To play, set your time and the number of questions, then click real or fake. At the end, you’ll get a score out of a 100 to let you know how you do. Don’t be discouraged- even the greatest among us can never get a very high score.
+            To play, set your time and the number of questions, then click real or fake. At the end, you’ll get a score to let you know how you do. Don’t be discouraged- even the greatest among us can never get a very high score.
 
             Good luck!
 
@@ -52,6 +52,7 @@
         <br>
 
         <p><i>Made for MLH local hack day 2018</i></p>
+        <p><i>Ivan Galakhov && Yash Parikh</i></p>
 
     </div>
 
@@ -62,6 +63,12 @@
         }
     </script>
     <style>
+        #main-container img {
+            width: 33%;
+        }
+        #main-container h3 {
+            /*transform: translateY(-125%);*/
+        }
         #main-container{
             top: 50%;
             left: 50%;

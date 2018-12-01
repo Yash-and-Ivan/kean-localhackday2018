@@ -61,7 +61,7 @@ checkAnswer = function(val){
             (questions/2*time) * 100
          */
 
-        var score = Math.round(((num_correct/final_time)/(2 * numq)) * 1000)/10;
+        var score = Math.round(num_correct/total_time * 1000)/10;
 
         $("#counter").text("Final Score: " + score);
         $("#white-overlay").fadeIn(2000);
