@@ -35,7 +35,7 @@ def make_tweet():
     if(random() > 0.7):
 
         real = choice(real_tweets)
-        tweet["text"] = real[0]
+        tweet["text"] = real[0].replace("&amp", "&")
         tweet["retweets"] = real[1]
         tweet["favorites"] = real[2]
         tweet["is_real"] = True
@@ -43,7 +43,7 @@ def make_tweet():
         tweet["date"] = datetime.strftime(datetime.strptime(date, '%m-%d-%Y %H:%M:%S'),'%#I:%M %p - %d %b %Y')
     else:
         generated = markov.make_short_sentence(int(50 + random()*150))
-        tweet["text"] = generated
+        tweet["text"] = generated.replace("&amp;", "&")
         tweet["retweets"] = choice(rts)
         tweet["favorites"] = choice(rts)
         tweet["is_real"] = False
